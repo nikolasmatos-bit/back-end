@@ -1,32 +1,33 @@
-// Inicio Back-End-- JAVASCRIPT 
+// Inicio Back-End - JavaScript
 // Aula 02 - Node.js
 // Aula 03 - Express
 
-// Variaveis 
+// Variáveis
 
-//ANTIGO!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!, pode ser redeclarado e mudar o valor
-var nome = "Nikolas";
-var idade = 30;
-var idade = 31; // não gera erro, mas não é uma boa prática
-var cidade = "São Paulo";
-//NOVO!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!, não pode ser redeclarado e nem mudar o valor
-const nome = "Nikolas";
-const idade = 30;
-const cidade = "São Paulo";
+// var permite redeclaração e alteração do valor.
+{
+  var nomeVar = "Nikolas";
+  var idadeVar = 30;
+  var idadeVar = 31;
+  var cidadeVar = "São Paulo";
+}
 
-// mais moderno, pode mudar de valor, mas não pode ser redeclarado
+// const não permite redeclaração nem alteração do valor.
+const nomeConst = "Nikolas";
+const idadeConst = 30;
+const cidadeConst = "São Paulo";
+
+// let permite alteração do valor, mas não redeclaração.
 let nome = "Nikolas";
 let idade = 30;
 let cidade = "São Paulo";
-nome = "Nikolas"; // pode mudar o valor
-//let nome = "Nikolas"; // não pode ser redeclarado ❌ ERROR 
+nome = "Nikolas Silva";
 
-// const é fixo, não pode mudar de valor, nem ser redeclarado
-const pi = 3.14; // não pode mudar o valor ❌ ERROR
-// pi = 40; // não pode mudar o valor ❌ ERROR
+// Uma constante precisa receber um valor e não pode ser alterada depois.
+const pi = 3.14;
 
 // Exemplo de uso de variáveis
-// Palavras comecando com letra maiúscula são reservadas para classes, então não é uma boa prática usar para variáveis
+// Palavras começando com letra maiúscula são reservadas para classes, então não é uma boa prática usá-las para variáveis.
 // camelCase é a convenção de nomenclatura para variáveis em JavaScript
 
 // let nomeCompleto; let idadeUsuario; function calcularIdade(anoNascimento) { let idade = 2024 - anoNascimento; return idade; } let idadeUsuario = calcularIdade(1990); console.log("Idade do usuário:", idadeUsuario); // let nomeCompleto = "Nikolas Silva"; console.log("Nome completo:", nomeCompleto); // 
@@ -43,6 +44,6 @@ const pi = 3.14; // não pode mudar o valor ❌ ERROR
 // };
 
 // SNAKE CASE é a convenção de nomenclatura para constantes em JavaScript
-// - Palvras separadas por um underscore _
+// - Palavras separadas por um underscore _
 
 // let nome_completo = "Nikolas Silva"; // não é uma boa prática usar snake case para variáveis, mas é permitido
